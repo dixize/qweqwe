@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ростелеком | Проектный офис</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <header>
+            <div class="container header-content">
+                <img src="logo.png" class="rt-logo" alt="Ростелеком">
+                <div class="brand-line">
+                    <h1>Отраслевые решения</h1>
+                    <span class="sub-brand">ПРОЕКТНЫЙ ОФИС</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="menu-section">
+            <div class="container">
+                <div class="grid-menu">
+                    <div class="card" onclick="openSlide('robotics')">
+                        <div class="num">01</div>
+                        <h3>Роботизация производства</h3>
+                        <p>Автоматизация и линии</p>
+                    </div>
+                    <div class="card" onclick="openSlide('quality')">
+                        <div class="num">02</div>
+                        <h3>Контроль качества</h3>
+                        <p>Машинное зрение</p>
+                    </div>
+                    <div class="card" onclick="openSlide('security')">
+                        <div class="num">03</div>
+                        <h3>Средства охраны</h3>
+                        <p>ИТСО и безопасность</p>
+                    </div>
+                    <div class="card" onclick="openSlide('eco')">
+                        <div class="num">04</div>
+                        <h3>Экомониторинг</h3>
+                        <p>Промбезопасность</p>
+                    </div>
+                    <div class="card" onclick="openSlide('equipment')">
+                        <div class="num">05</div>
+                        <h3>Тех. оборудование</h3>
+                        <p>Инженерные системы</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-footer-section">
+            <div class="container">
+                <h2>Проектный офис</h2>
+                <div class="divider"></div>
+                <div class="footer-grid">
+                    <div class="footer-item">
+                        <h4>Комплексный подход</h4>
+                        <p>От аудита предприятия до внедрения тяжелых ИТ-решений и сервисного обслуживания 24/7.</p>
+                    </div>
+                    <div class="footer-item">
+                        <h4>Импортозамещение</h4>
+                        <p>Приоритет на российское ПО и оборудование. Работа с критической инфраструктурой (ФЗ-187).</p>
+                    </div>
+                    <div class="footer-item">
+                        <h4>Масштабируемость</h4>
+                        <p>Решения адаптируются под любые масштабы: от локальных цехов до федеральных холдингов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="modal-overlay" class="modal hidden">
+        <button class="close-btn" onclick="closeSlide()">ВЕРНУТЬСЯ ✕</button>
+        <div class="modal-content" id="modal-body"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
